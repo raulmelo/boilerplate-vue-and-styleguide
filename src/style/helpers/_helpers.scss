@@ -1,0 +1,51 @@
+//// helpers color and background theme
+@each $color in $colors {
+	.c--#{nth($color, 1)} {
+		color: #{nth($color, 2)};
+	}
+	.bg--#{nth($color, 1)} {
+		background-color: #{nth($color, 2)};
+	}
+}
+
+// align text
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+
+// space top
+@for $i from 1 through 10 {
+	.mt-#{$i} {
+		margin-top: #{$i}0px;
+	}
+}
+
+// space bottom
+@for $i from 1 through 5 {
+	.mb-#{$i} {
+		margin-bottom: #{$i}0px;
+	}
+}
+
+//
+.item-full {
+	max-width: 100%;
+	width: 100%;
+}
+
+.noscroll {
+	overflow: hidden !important;
+	max-height: 100vh !important;
+}
+
+
+
+@mixin noselect {
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}

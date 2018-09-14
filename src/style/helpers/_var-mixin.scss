@@ -1,0 +1,46 @@
+/////////////////////
+// Variable Fonts
+/////////////////////
+
+$f-primary: 'Open Sans', sans-serif;
+
+
+/////////////////////
+// Variable colors
+/////////////////////
+
+
+
+$c-primary: #1a2e4a;
+$c-second: #ec821d;
+$c-second-hover: #ffa54f;
+$c-third: #694711;
+$c-fourth: #1077a7;
+$c-silver: #a5afbd;
+$c-error: #d71920;
+
+
+$colors: (
+    default:    $c-primary,
+    primary:    $c-primary,
+    second:     $c-second,
+    third:      $c-third,
+    fourth:     $c-fourth,
+    silver:     $c-silver,
+    danger:     #f53d3d,
+    light:      #a5afbd,
+    dark:       #222
+);
+
+
+
+
+
+// Function transform px to rem example: get-rem(60px);
+$base-font-size: 16px;
+
+@function get-rem( $target, $context: $base-font-size) {
+  
+  @return ($target / $context) * 1rem;
+
+}
