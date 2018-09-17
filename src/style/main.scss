@@ -1,15 +1,12 @@
 @charset "UTF-8";
 
 // Base
-@import './base/_reset';
-@import './base/_fonts';
-
+@import './base/reset';
 //helpers
-
-@import './helpers/_var-mixin';
-@import './helpers/_medias';
-@import './helpers/_helpers';
-
+@import './helpers/mixins/mixin';
+@import './helpers/variables';
+@import './helpers/medias';
+@import './helpers/helpers';
 // layouts
 @import '/layout/footer';
 @import '/layout/header';

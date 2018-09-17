@@ -11,7 +11,7 @@
 <script>
 export default {
     name: 'Color',
-    data () { 
+    data () {
         return {
             listColor: [
                 {
@@ -48,9 +48,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 
-$f-primary: 'avenir next', avenir, sans-serif;
+
 
 
 
@@ -63,7 +63,7 @@ $f-primary: 'avenir next', avenir, sans-serif;
 	grid-row-gap: 20px
 
 }
-.boxColor { 
+.boxColor {
 	display: flex;
 	align-items: flex-end;
 	text-align: left;
@@ -74,13 +74,12 @@ $f-primary: 'avenir next', avenir, sans-serif;
 		width: 100%;
 		margin: 3px;
 		background-color: #fff;
-		h4 { 
+		h4 {
 			line-height: 30px;
 			font-size: 14px;
 			padding-left: 5px;
 			margin: 0;
             font-weight: 600;
-            font-family: $f-primary;
 		}
 	}
 }

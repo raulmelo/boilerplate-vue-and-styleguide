@@ -1,0 +1,16 @@
+////////////////////////////////////////////////////////////
+//
+// 	Para usar esse mixin deve ser usado da seguinte forma
+// 	1 - incluir no mixin.scss
+// 	2 - .classeExemplo {
+//		font-size:  get-rem(60px);
+//	}
+//
+/////////////////////////////////////////////////////////////
+$base-font-size: 16px;
+
+@function get-rem( $target, $context: $base-font-size) {
+
+  @return ($target / $context) * 1rem;
+
+}

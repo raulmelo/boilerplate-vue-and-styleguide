@@ -7,3 +7,9 @@
     <router-view/>
   </div>
 </template>
+
+
+<style lang="scss">
+	@import "@/style/main.scss";
+</style>
+

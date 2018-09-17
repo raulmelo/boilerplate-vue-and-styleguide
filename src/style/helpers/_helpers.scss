@@ -1,42 +1,42 @@
 //// helpers color and background theme
 @each $color in $colors {
-	.c--#{nth($color, 1)} {
+	._c--#{nth($color, 1)} {
 		color: #{nth($color, 2)};
 	}
-	.bg--#{nth($color, 1)} {
+	._bg--#{nth($color, 1)} {
 		background-color: #{nth($color, 2)};
 	}
 }
 
 // align text
-.align-center {
+._align-center {
 	text-align: center;
 }
-.align-right {
+._align-right {
 	text-align: right;
 }
 
 // space top
 @for $i from 1 through 10 {
-	.mt-#{$i} {
+	._mt-#{$i} {
 		margin-top: #{$i}0px;
 	}
 }
 
 // space bottom
 @for $i from 1 through 5 {
-	.mb-#{$i} {
+	._mb-#{$i} {
 		margin-bottom: #{$i}0px;
 	}
 }
 
 //
-.item-full {
+._item-full {
 	max-width: 100%;
 	width: 100%;
 }
 
-.noscroll {
+._noscroll {
 	overflow: hidden !important;
 	max-height: 100vh !important;
 }

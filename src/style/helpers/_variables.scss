@@ -1,0 +1,38 @@
+/////////////////////
+// Variable Fonts
+/////////////////////
+$font-1: 'Muli', sans-serif;
+
+
+/////////////////////
+// Media Queries - brekpoints
+/////////////////////
+$desktop_width: 1025px;
+$tablet_width: 1024px;
+$mobile_width: 640px;
+
+
+/////////////////////
+// Variable colors
+/////////////////////
+$color-1: #1a2e4a;
+$color-2: #ec821d;
+$color-3: #ffa54f;
+$color-4: #694711;
+$color-5: #1077a7;
+$color-info: #a5afbd;
+$color-error: #d71920;
+
+
+$colors: (
+    default:    $color-1,
+    second:    	$color-2,
+    third:      $color-3,
+    fourth:     $color-4,
+    silver:     $color-info,
+    danger:     $color-error,
+    light:      #a5afbd,
+    dark:       #222
+);
+
+
