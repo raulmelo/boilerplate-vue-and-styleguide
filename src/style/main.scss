@@ -1,18 +1,19 @@
 @charset "UTF-8";
 
+// Base
+@import './base/_reset';
+@import './base/_fonts';
 
 //helpers
-@import './helpers/_reset';
+
 @import './helpers/_var-mixin';
 @import './helpers/_medias';
 @import './helpers/_helpers';
 
-// Base
-@import '/base/_fonts';
 // layouts
-@import '/layouts/footer';
-@import '/layouts/header';
-@import '/layouts/layout';
+@import '/layout/footer';
+@import '/layout/header';
+@import '/layout/layout';
 // lib
 @import '/lib/slick';
 @import '/lib/vuebar';
