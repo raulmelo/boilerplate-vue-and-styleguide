@@ -27,7 +27,8 @@ module.exports = {
 			exampleMode: 'hide',
 			usageMode: 'hide',
 			components: () => [
-				 './docs/pages/start/color.vue'
+				'./docs/pages/start/color.vue',
+				'./docs/pages/start/Typography.vue'
 				// './docs/pages/start/intro.vue'
 				// "../docs/components/tokens/FontSize.vue",
 				// "../docs/components/tokens/Spacing.vue",

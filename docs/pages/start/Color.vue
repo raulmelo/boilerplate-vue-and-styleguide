@@ -1,6 +1,6 @@
 <template>
     <div class="blockGrid">
-        <div class="boxColor" v-for="cor in listColor" :class="`bg--${cor.name}`" :key="cor.name">
+        <div class="boxColor" v-for="cor in listColor" :class="`_bg--${cor.name}`" :key="cor.name">
             <div class="boxColor__info">
                 <h4>{{cor.var}}</h4>
             </div>
@@ -15,34 +15,38 @@ export default {
         return {
             listColor: [
                 {
-                    name: 'primary',
-                    var: '$c-primary'
+                    name: 'default',
+                    var: '$color-1'
                 },
                 {
-                    name: 'second',
-                    var: '$c-third'
+                    name: 'second',    	
+                    var: '$color-2'
                 },
                 {
-                    name: 'third',
-                    var: '$c-fourth'
+                    name: 'third' ,
+                    var: '$color-3'
                 },
                 {
-                    name: 'silver',
-                    var: '$c-silver'
+                    name: 'fourth',
+                    var: '$color-4'
+                },
+                {
+                    name: 'info',
+                    var: '$color-info'
                 },
                 {
                     name: 'danger',
-                    var: '$c-danger'
+                    var: '$color-error'
                 },
                 {
-                    name: 'light',
-                    var: '$c-light'
+                    name: 'light' ,
+                    var: '#a5afbd'
                 },
                 {
-                    name: 'dark',
-                    var: '$c-dark'
+                    name: 'dark'  ,
+                    var: '#222'
                 }
-            ]
+        ],
         }
     }
 }
@@ -50,7 +54,16 @@ export default {
 
 <style lang="scss" >
 
-
+$colors: (
+    default:    $color-1,
+    second:    	$color-2,
+    third:      $color-3,
+    fourth:     $color-4,
+    silver:   $color-info,
+    danger:     $color-error,
+    light:      #a5afbd,
+    dark:       #222
+);
 
 
 
@@ -86,9 +99,3 @@ export default {
 </style>
 
 
-<docs>
-
-```js
-<Color pizza="🍕" />
-```
-</docs>
