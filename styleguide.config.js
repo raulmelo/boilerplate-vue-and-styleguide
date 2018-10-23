@@ -24,25 +24,16 @@ module.exports = {
 			name: 'Start do projeto',
 			content: './docs/pages/start/start.md',
 			sectionDepth: 1,
-			exampleMode: 'hide',
-			usageMode: 'hide',
+			exampleMode: 'show',
+			usageMode: 'show',
 			components: () => [
 				'./docs/pages/start/color.vue',
 				'./docs/pages/start/Typography.vue'
-				// './docs/pages/start/intro.vue'
-				// "../docs/components/tokens/FontSize.vue",
-				// "../docs/components/tokens/Spacing.vue",
-				// "../docs/components/tokens/All.vue",
 			]
+		},
+		{
+			name: 'Componentes',
+		   	components: './src/components/**/[A-Z]*.vue'
 		}
-		// {
-		//   /**
-		//    * Private components have to be loaded into the documentation as well,
-		//    * otherwise anything using them will be broken. We’re loading them in
-		//    * their own section, which then gets hidden in docs/docs.styles.scss
-		//    */
-		//   name: 'Componentes',
-		//   components: './src/components/**/[A-Z]*.vue'
-		// }
 	]
 }

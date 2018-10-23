@@ -40,6 +40,5 @@ Ou se quiser pode ser usado como classes auxiliadoras
     <span class='_heading-4' >h4 - The quick brown  over the lazy dog.</span>
     <span class='_heading-5' >h5 - The quick brown  over the lazy dog.</span>
     <span class='_heading-p' >h5 - The quick brown  over the lazy dog.</span>
-    
 ```
 </docs>
