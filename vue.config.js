@@ -4,7 +4,7 @@ const webpack = require('webpack')
 module.exports = {
 	lintOnSave: true,
 	pwa: {
-		name: 'Eu faço cultura'
+		name: 'Vue + Styleguide'
 	},
 	chainWebpack: config => {
 
