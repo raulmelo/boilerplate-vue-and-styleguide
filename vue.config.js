@@ -7,7 +7,6 @@ module.exports = {
 		name: 'Vue + Styleguide'
 	},
 	chainWebpack: config => {
-
 		config.plugin('provide').use(webpack.ProvidePlugin, [
 			{
 				$: 'jquery',
@@ -18,7 +17,16 @@ module.exports = {
 			}
 		])
 	},
-
+	configureWebpack: {
+		module: {
+			rules: [
+				{
+					resourceQuery: /blockType=docs/,
+					loader: "null-loader"
+				}
+			]
+		}
+	},
 	css: {
 		loaderOptions: {
 			sass: {
