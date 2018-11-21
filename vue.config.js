@@ -6,6 +6,7 @@ module.exports = {
 	pwa: {
 		name: 'Vue + Styleguide'
 	},
+
 	chainWebpack: config => {
 		config.plugin('provide').use(webpack.ProvidePlugin, [
 			{

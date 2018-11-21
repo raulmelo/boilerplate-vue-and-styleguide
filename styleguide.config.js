@@ -1,7 +1,7 @@
 const path = require('path')
 module.exports = {
 	title: 'Guia de estilo Start',
-	defaultExample: true,
+	defaultExample: false,
 
 	theme: {
 		maxWidth: '100%',
@@ -28,12 +28,14 @@ module.exports = {
 			usageMode: 'show',
 			components: () => [
 				'./docs/pages/start/color.vue',
-				'./docs/pages/start/Typography.vue'
+				'./docs/pages/start/Typography.vue',
+				'./docs/pages/start/Intro.vue'
 			]
 		},
 		{
 			name: 'Componentes',
-		   	components: './src/components/**/[A-Z]*.vue'
+			defaultExample: false,
+			components: './src/components/**/[A-Z]*.vue',
 		}
 	]
 }
