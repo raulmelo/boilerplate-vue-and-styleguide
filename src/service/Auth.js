@@ -1,43 +1,56 @@
 import axios from 'axios'
+import store from '../store'
+
+const API_URL = process.env.VUE_APP_API
 
 const APIService = {
-    getById: (endpoint, id) => {
-        return new Promise(resolve => {
-            axios.get(`/auth/${endpoint}/${id}`).then(resp => {
+    getById: (endpoint, id) => new Promise((resolve, reject) => {
+            axios.get(`${API_URL}/auth/${endpoint}/${id}`).then((resp) => {
                 resolve(resp)
             })
-        })
-    },
-    deleteById: (endpoint, id) => {
-        return new Promise(resolve => {
+        }),
+    deleteById: (endpoint, id) => new Promise((resolve, reject) => {
             axios
-                .delete(`/auth/${endpoint}/${id}`)
-                .then(resp => {
-                    resolve(resp)
-                })
-        })
-    },
-    get: endpoint => {
-        return new Promise(resolve => {
-            axios.get(`/auth/${endpoint}`).then(resp => {
+            .delete(`${API_URL}/auth/${endpoint}/${id}`)
+            .then((resp) => {
                 resolve(resp)
+            }).catch((err) => {
+              store.commit('auth_error')
+              localStorage.removeItem('token')
+              reject(err)
             })
-        })
-    },
-    put(endpoint, data) {
-        return new Promise(resolve => {
-            axios.put(`/auth/${endpoint}`, data).then(resp => {
+        }),
+    get: endpoint => new Promise((resolve, reject) => {
+            axios.get(`${API_URL}/auth/${endpoint}`).then((resp) => {
                 resolve(resp)
+            }).catch((err) => {
+              store.commit('auth_error')
+              localStorage.removeItem('token')
+              reject(err)
+            })
+        }),
+    put(endpoint, data) {
+        return new Promise((resolve, reject) => {
+            axios.put(`${API_URL}/auth/${endpoint}`, data).then((resp) => {
+                resolve(resp)
+            }).catch((err) => {
+              store.commit('auth_error')
+              localStorage.removeItem('token')
+              reject(err)
             })
         })
     },
     post(endpoint, data) {
-        return new Promise(resolve => {
-            axios.post(`/api${endpoint}`, data).then(resp => {
+        return new Promise((resolve, reject) => {
+            axios.post(`${API_URL}/api${endpoint}`, data).then((resp) => {
                 resolve(resp)
+            }).catch((err) => {
+              store.commit('auth_error')
+              localStorage.removeItem('token')
+              reject(err)
             })
         })
-    }
+    },
 }
 
 export default APIService

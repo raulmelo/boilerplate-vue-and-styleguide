@@ -1,5 +1,5 @@
 <template>
-    <component 
+    <component
         :is="tagButton"
         :class="`
             btn
@@ -18,11 +18,11 @@
         name: 'Buttons',
         props: {
             /**
-            * 
+            *
             */
             color: {
                 type: String,
-                default: 'btn-primary'
+                default: 'btn-primary',
             },
             /**
             * Fundo transparente com apenas borda e texto colorido.
@@ -34,12 +34,12 @@
             /**
             * Tamanho do botão - xs, sm, md, lg
             */
-            size: { 
+            size: {
                 type: String,
-                default: ''
+                default: '',
             },
             /**
-             * passando link 
+             * passando link
              */
             href: {
                 type: String,
@@ -50,21 +50,21 @@
             */
             disabled: {
                 type: Boolean,
-                default: false
-            }
-        }, 
+                default: false,
+            },
+        },
         computed: {
             tagButton() {
                 if (this.href) return 'a';
                 return 'button';
             },
         },
-    }   
+    }
 </script>
 
 
 <docs>
-    ### 
+    ###
     ### Estilos do buttons - Tamanhos
     ```jsx
         <Buttons size="xs" >Me aperte</Buttons>
