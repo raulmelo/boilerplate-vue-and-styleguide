@@ -1,41 +1,15 @@
-const path = require('path')
 module.exports = {
-	title: 'Guia de estilo Start',
-	defaultExample: false,
-
-	theme: {
-		maxWidth: '100%',
-		sidebarWidth: 240,
-		fontFamily: {
-			base: ["'Fira Sans'", 'Helvetica', 'Arial', 'sans-serif'],
-			monospace: ['Consolas', "'Liberation Mono'", 'Menlo', 'monospace']
-		}
-	},
-	editorConfig: {
-		theme: 'night'
-	},
-	require: [
-		path.join(__dirname, 'docs/docs.css'),
-		path.join(__dirname, 'src/style/main.scss')
-	],
-	styleguideDir: './dist/docs',
-	sections: [
-		{
-			name: 'Start do projeto',
-			content: './docs/pages/start/start.md',
-			sectionDepth: 1,
-			exampleMode: 'show',
-			usageMode: 'show',
-			components: () => [
-				'./docs/pages/start/color.vue',
-				'./docs/pages/start/Typography.vue',
-				'./docs/pages/start/Intro.vue'
-			]
-		},
-		{
-			name: 'Componentes',
-			defaultExample: false,
-			components: './src/components/**/[A-Z]*.vue',
-		}
-	]
+  // set your styleguidist configuration here
+  title: 'Default Style Guide',
+  components: 'src/components/**/[A-Z]*.vue',
+  defaultExample: true
+  // sections: [
+  //   {
+  //     name: 'First Section',
+  //     components: 'src/components/**/[A-Z]*.vue'
+  //   }
+  // ],
+  // webpackConfig: {
+  //   // custom config goes here
+  // }
 }
