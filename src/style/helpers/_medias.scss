@@ -1,0 +1,105 @@
+
+@mixin media_desktop {
+	@media only screen
+    and (min-width: #{$desktop_width}) {
+		@content;
+	}
+}
+
+@mixin media_tablet {
+	@media only screen
+    and (max-width: #{$tablet_width}) {
+		@content;
+	}
+}
+@mixin media_mobile {
+	@media only screen
+    and (max-width: #{$mobile_width}) {
+		@content;
+	}
+}
+
+@mixin media_ie {
+	// ie9+ (for applying rules USE !important)
+	@media screen and (min-width: 0\0) and (min-resolution: +72dpi) {
+		@content;
+	}
+}
+
+@mixin media_edge {
+	@supports (-ms-accelerator: true) {
+		@content;
+	}
+}
+
+.visible-xs {
+	@include media_tablet() {
+		display: none;
+	}
+	@include media_desktop() {
+		display: none;
+	}
+	@include media_mobile() {
+		display: inherit;
+	}
+}
+
+.visible-sm {
+	@include media_desktop() {
+		display: none;
+	}
+	@include media_tablet() {
+		display: none;
+	}
+	@include media_mobile() {
+		display: inherit;
+	}
+}
+
+.visible-md {
+	@include media_mobile() {
+		display: none;
+	}
+	@include media_desktop() {
+		display: none;
+	}
+	@include media_tablet() {
+		display: inherit;
+	}
+}
+
+.visible-lg {
+	@include media_mobile() {
+		display: none;
+	}
+	@include media_tablet() {
+		display: none;
+	}
+	@include media_desktop() {
+		display: inherit;
+	}
+}
+
+.hidden-xs {
+	@include media_mobile() {
+		display: none !important;
+	}
+}
+
+.hidden-sm {
+	@include media_mobile() {
+		display: none !important;
+	}
+}
+
+.hidden-md {
+	@include media_tablet() {
+		display: none !important;
+	}
+}
+
+.hidden-lg {
+	@include media_desktop() {
+		display: none !important;
+	}
+}

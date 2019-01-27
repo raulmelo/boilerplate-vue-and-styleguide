@@ -2,13 +2,15 @@
   "name": "start",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "styleguide": "vue-cli-service styleguidist",
-    "styleguide:build": "vue-cli-service styleguidist:build"
-  },
+	"scripts": {
+		"serve": "vue-cli-service serve --mode dev",
+		"serve:prod": "vue-cli-service serve --mode prod",
+		"build": "vue-cli-service build",
+		"build:dev": "vue-cli-service build --mode dev",
+		"lint": "vue-cli-service lint",
+		"styleguide": "vue-cli-service styleguidist",
+		"styleguide:build": "vue-cli-service styleguidist:build"
+	},
   "dependencies": {
     "register-service-worker": "^1.5.2",
     "vue": "^2.5.21",

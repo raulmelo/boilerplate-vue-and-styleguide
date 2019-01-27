@@ -1,0 +1,9 @@
+$pathFont: "~@/assets/fonts";
+
+
+@font-face {
+    font-family: 'Muli';
+    src: url('#{$pathFont}/Muli/Muli-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
