@@ -3,8 +3,8 @@
 // Base
 @import './base/reset';
 //helpers
-@import './helpers/mixins/mixin';
-@import './helpers/variables';
+@import './helpers/mixin';
+@import './helpers/variable.scss'; // <reference path="./variable.scss" />.
 @import './helpers/medias';
 @import './helpers/helpers';
 // layouts
@@ -21,3 +21,5 @@
 @import '/modules/_nav';
 @import '/modules/_tabs';
 @import '/modules/_typography';
+
+

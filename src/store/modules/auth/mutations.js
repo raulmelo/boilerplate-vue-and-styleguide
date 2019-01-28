@@ -14,5 +14,5 @@ const EXIT_USER = (state) => {
 
 export default {
 	LOGIN_SUCESS,
-	EXIT_USER
+	EXIT_USER,
 }
