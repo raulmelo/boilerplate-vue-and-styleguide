@@ -1,7 +1,6 @@
 const path = require('path')
 module.exports = {
 	webpackConfig: {
-		
 		resolve: {
 			extensions: ['.js', '.json', '.vue', '.ts', '.css', '.scss'],
 			alias: {
