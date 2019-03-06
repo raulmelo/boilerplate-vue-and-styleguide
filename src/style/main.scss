@@ -2,19 +2,17 @@
 
 // Base
 @import './base/reset';
-//helpers
+@import './base/font';
+//mixins variables e breackpoint
 @import './helpers/mixin';
 @import './helpers/variable.scss'; // <reference path="./variable.scss" />.
 @import './helpers/medias';
-@import './helpers/helpers';
 // layouts
-@import '/layout/footer';
-@import '/layout/header';
-@import '/layout/layout';
+    //@import '/layout/footer';
+    //@import '/layout/header';
+    //@import '/layout/layout';
 // lib
-@import '/lib/slick';
-@import '/lib/vuebar';
-@import '/lib/grid';
+    //@import '/lib/grid';
 //modules
 @import '/modules/_buttons';
 @import '/modules/_form';
@@ -22,4 +20,5 @@
 @import '/modules/_tabs';
 @import '/modules/_typography';
 
-
+// Helpers
+@import './helpers/helpers';

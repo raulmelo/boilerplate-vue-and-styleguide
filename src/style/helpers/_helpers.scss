@@ -1,6 +1,6 @@
 //// helpers color and background theme
 @each $color in $colors {
-	._c--#{nth($color, 1)} {
+	._cl--#{nth($color, 1)} {
 		color: #{nth($color, 2)};
 	}
 	._bg--#{nth($color, 1)} {
@@ -19,7 +19,7 @@
 // space top
 @for $i from 1 through 10 {
 	._mt-#{$i} {
-		margin-top: #{$i}0px;
+		margin-top: get-vw( $i * 10px );
 	}
 }
 

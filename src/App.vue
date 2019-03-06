@@ -22,8 +22,18 @@ export default {
     * - Verificar Lighthouse
     * - Adicionar google analitycs
     */
-    let MSG = process.env.NODE_ENV === "dev" ? `Ambiente em DEV 😎` : `Ops! 😐  Cuidado.`
+    let MSG = process.env.NODE_ENV === 'development' ? `Ambiente em DEV 😎` : `Ops! 😐  Cuidado.`
     console.log("%c%s", "color: #364860; background: #f6f6f6; font-size: 12px; padding: 8px;", `${MSG}`)
   }
 }
 </script>
+
+
+<style lang="scss">
+  @import "@/style/main.scss";
+  body { 
+    background-color: black;
+    color: #fff;
+  }
+</style>
+

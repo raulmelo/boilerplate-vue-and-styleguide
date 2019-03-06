@@ -1,0 +1,36 @@
+/////////////////////
+// Variable Fonts
+/////////////////////
+$font-1: 'Facto', sans-serif;
+
+
+
+/////////////////////
+// Media Queries - brekpoints
+/////////////////////
+$desktop_width: 1200px;
+$tablet_width: 1024px;
+$mobile_width: 640px;
+
+
+/////////////////////
+// Variable colors
+/////////////////////
+$color-1: #57468e;
+$color-2: #fc41fc;
+$color-3: #559ee0;
+$color-4: #687dc7;
+$color-5: #1077a7;
+$color-text: #616161;
+$colors: (
+    1: $color-1,
+    2:  $color-2,
+    3:   $color-3,
+    4:  $color-4,
+	text: 	$color-text,
+    light:   #a5afbd,
+	dark:    #222,
+	white: #fff
+);
+
+
