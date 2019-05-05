@@ -1,7 +1,4 @@
 
-
-
-// / verificando se o  usuario esta logado
 const VerifyLogged = (context, payload) => {
   console.log(context, payload)
 }

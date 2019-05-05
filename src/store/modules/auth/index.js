@@ -2,21 +2,18 @@ import actions 		from './actions'
 import mutations from './mutations'
 
 const state = {
-  API: process.env.VUE_APP_API,
   token: localStorage.getItem('token') || '',
-  status: true,
-  user: {},
+  user: {}
 }
 
 const getters = {
-  isLoggedIn: state => !!state.token,
-  authStatus: state => state.status,
+  isLoggedIn: state => !!state.token
 }
 
 
 export default {
 	namespaced: true,
-  	state,
+  state,
 	actions,
 	mutations,
   getters,

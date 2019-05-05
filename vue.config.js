@@ -2,7 +2,9 @@ const webpack = require('webpack')
 
 module.exports = {
     pwa: {
-        name: 'boilerplate-vue'
+      name: 'boilerplate-vue',
+      themeColor: '#F8E71C',
+      msTileColor: '#F8E71C'
     },
     configureWebpack: {
         module: {
