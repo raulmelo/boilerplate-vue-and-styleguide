@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 
 module.exports = {
+    filenameHashing: false, // adiciona uma hash contra cache na build
     pwa: {
       name: 'boilerplate-vue',
       themeColor: '#F8E71C',
